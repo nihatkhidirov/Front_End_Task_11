@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login System</title>
+    <style>
+      /* Sadə stil tərtibatı */
+      .hidden {
+        display: none;
+      }
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="login-form" class="hidden">
+      <h2>Login</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" /><br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" /><br />
+      <input type="checkbox" id="remember-me" /> Remember Me<br />
+      <button onclick="login()">Login</button>
+      <p id="error-message" class="error hidden">
+        Invalid username or password
+      </p>
+    </div>
+    <div id="welcome-message" class="hidden">
+      <h2>Welcome to our page</h2>
+      <button onclick="logout()">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
